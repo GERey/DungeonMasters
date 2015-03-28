@@ -20,6 +20,9 @@ public class MainActivity extends Activity {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(linearLayoutManager);
+
+        CharacterAdapter characterAdapter = new CharacterAdapter(null);
+        recyclerView.setAdapter(characterAdapter);
     }
 
 
